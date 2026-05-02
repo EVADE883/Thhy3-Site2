@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thhy3 | Accs</title>
+    <style>
+        html, body {
+            height: 100%; margin: 0; padding: 0;
+            overflow: hidden; font-family: 'Segoe UI', sans-serif;
+            display: flex; justify-content: center; align-items: center;
+        }
+
+        .background-overlay {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            z-index: -1; background-image: url('backround.jpg'); 
+            background-size: cover; background-position: center;
+            filter: blur(15px); transform: scale(1.1); 
+        }
+
+        .card { 
+            background: rgba(10, 10, 10, 0.85); padding: 40px; 
+            border-radius: 25px; border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center; width: 450px; max-width: 90%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.7); color: #fff;
+            backdrop-filter: blur(10px);
+        }
+        
+        .pfp { 
+            width: 120px; height: 120px; border-radius: 50%; 
+            border: 3px solid #fe2c55; object-fit: cover; margin-bottom: 20px; 
+        }
+
+        h2 { margin: 0 0 25px 0; font-size: 2rem; }
+
+        .btn { 
+            display: block; padding: 18px 0; margin: 12px 0; 
+            border-radius: 12px; text-decoration: none; font-weight: bold; 
+            color: #fff; font-size: 1.1rem; transition: 0.3s ease; 
+        }
+
+        .tiktok { background: #fe2c55; }
+        .discord { background: #5865F2; }
+        .mc-btn { background: #388E3C; } 
+        
+        /* New styling for the Vote button */
+        .vote-btn { 
+            background: linear-gradient(45deg, #fe2c55, #ff8e53);
+            margin-top: 30px;
+            box-shadow: 0 4px 15px rgba(254, 44, 85, 0.3);
+        }
+
+        .btn:hover { transform: scale(1.02); filter: brightness(1.1); }
+        
+        .footer-text {
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.4);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-overlay"></div>
+
+    <div class="card">
+        <img src="pfp.jpg" alt="Profile Image" class="pfp">
+        <h2>Thhy3</h2>
+        
+        <a href="https://www.tiktok.com/@baget475" target="_blank" class="btn tiktok">TikTok</a>
+        <a href="https://discord.com/users/1451506656713113731" target="_blank" class="btn discord">Discord</a>
+        <a href="https://laby.net/@Thhy3" target="_blank" class="btn mc-btn">Mc Account</a>
+
+        <!-- This is your Google Form Link -->
+        <a href="https://forms.gle/ALPbR8ZDAH3aUvtm9" target="_blank" class="btn vote-btn">👍 Vote & Like My Page</a>
+        
+        <p class="footer-text">I'll see your username when you vote!</p>
+    </div>
+
+</body>
+</html>
